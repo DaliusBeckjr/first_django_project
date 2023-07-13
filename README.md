@@ -1,6 +1,7 @@
 # first_django_project
-#
+
 <br>
+
 ## Description 
 ###
 <p> this is a assignment from a coding bootcamp that is a starter project for Pythons Django Framework  <br /> It was just seeing
