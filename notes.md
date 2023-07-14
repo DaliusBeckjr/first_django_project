@@ -1,0 +1,4 @@
+to deactivate venv 
+```
+deactivate
+```
