@@ -1,9 +1,9 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from django.http import JsonResponse
 
 # Create your views here.
 def root(request):
-    return redirect('/blogs')
+    return redirect('blogs/') # must match the path routes when redirecting to other page
 
 def index(request):
     return HttpResponse("placeholder to later display a list of all blogs")
@@ -20,9 +20,5 @@ def show(request, number):
 def edit(request, number):
     return HttpResponse(f"placeholder to edit blog {number}")
 
-def destroy(request, number):
+def delete(request):
     return redirect('/blogs')
-
-# bonus
-def bonus(request):
-    return JsonResponse({"title": "My first blog", "content": "lorem ipsum dolor sit amet consectetur elit"})
